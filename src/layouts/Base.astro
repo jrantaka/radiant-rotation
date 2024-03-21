@@ -12,6 +12,10 @@ const { pageTitle } = Astro.props;
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link
+			href="https://api.fontshare.com/v2/css?f[]=lora@401,400,600,700&display=swap"
+			rel="stylesheet"
+		/>
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
@@ -19,7 +23,7 @@ const { pageTitle } = Astro.props;
 	</head>
 	<body transition:animate={fade({ duration: "0.2s" })}>
 		<Header />
-		<h1>{pageTitle}</h1>
+		<h1 class="text-4xl font-bold">{pageTitle}</h1>
 		<slot />
 	</body>
 </html>

@@ -1,0 +1,6 @@
+body {
+	@apply font-serif dark:bg-slate-900 text-white text-lg;
+}
+h1 {
+	@apply font-sans;
+}
