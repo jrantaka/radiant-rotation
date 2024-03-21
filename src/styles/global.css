@@ -1,6 +1,15 @@
 body {
-	@apply font-serif dark:bg-slate-900 text-white text-lg;
+	@apply font-serif dark:bg-slate-900 text-white text-lg antialiased;
 }
 h1 {
 	@apply font-sans;
+}
+.nav-links {
+	@apply flex flex-row justify-center items-baseline;
+}
+.nav-links a {
+	@apply px-2 py-3 mx-2 font-sans border-0 min-w-40 text-center rounded-full;
+}
+.nav-links .active {
+	@apply font-bold border-2;
 }

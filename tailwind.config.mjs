@@ -4,7 +4,7 @@ export default {
 	theme: {
 		fontFamily: {
 			serif: ["Lora", "ui-sans-serif", "system-ui", "-apple-system"],
-			sans: ["ui-sans-serif", "system-ui", "-apple-system"],
+			sans: ["Plein", "ui-sans-serif", "system-ui", "-apple-system"],
 		},
 		extend: {},
 	},

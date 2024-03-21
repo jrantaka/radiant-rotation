@@ -3,6 +3,9 @@ import Base from "../layouts/Base.astro";
 import Greeting from "../components/Greeting";
 ---
 
-<Base pageTitle="Home page">
-	<Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
+<Base pageTitle="Tervetuloa">
+	<Greeting
+		client:load
+		messages={["Hejsan hejsan", "Hallo", "Hola", "Habari"]}
+	/>
 </Base>
