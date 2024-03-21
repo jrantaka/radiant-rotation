@@ -1,7 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import Greeting from "../components/Greeting";
 ---
 
 <Base pageTitle="Home page">
-	<h2>Awesomee</h2>
+	<Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
 </Base>
