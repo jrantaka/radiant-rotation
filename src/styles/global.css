@@ -5,11 +5,14 @@ h1 {
 	@apply font-sans;
 }
 .nav-links {
-	@apply flex flex-row justify-center items-baseline;
+	@apply flex flex-row items-baseline;
 }
 .nav-links a {
-	@apply px-2 py-3 mx-2 font-sans border-0 min-w-40 text-center rounded-full;
+	@apply mx-4 font-sans;
+}
+.nav-links a:first-of-type {
+	@apply ml-0;
 }
 .nav-links .active {
-	@apply font-bold border-2;
+	@apply font-bold border-b-2;
 }
