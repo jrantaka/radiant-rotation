@@ -1,5 +1,5 @@
 body {
-	@apply font-serif dark:bg-black text-white text-xl antialiased leading-normal;
+	@apply font-serif text-black dark:bg-black dark:text-white text-xl antialiased leading-relaxed;
 }
 h1 {
 	@apply font-sans;
@@ -14,5 +14,8 @@ h1 {
 	@apply ml-0;
 }
 .nav-links .active {
-	@apply font-medium border-b-[1px];
+	@apply font-medium border-black border-b-[1px] dark:border-white;
+}
+.nav-links a:hover {
+	@apply border-gray-300 border-b-[1px];
 }

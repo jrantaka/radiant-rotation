@@ -4,7 +4,7 @@ export default {
 	theme: {
 		fontFamily: {
 			serif: ["Rowan", "ui-sans-serif", "system-ui", "-apple-system"],
-			sans: ["Plein", "ui-sans-serif", "system-ui", "-apple-system"],
+			sans: ["Switzer", "ui-sans-serif", "system-ui", "-apple-system"],
 		},
 		extend: {},
 	},

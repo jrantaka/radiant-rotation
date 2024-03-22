@@ -3,18 +3,27 @@ import Base from "../layouts/Base.astro";
 import Greeting from "../components/Greeting";
 ---
 
-<Base pageTitle="Tervetuloa">
+<Base pageTitle="Tervetuloa!">
 	<!-- <Greeting
 		client:load
 		messages={["Hejsan hejsan", "Hallo", "Hola", "Habari"]}
 	/> -->
-	<p class="mt-2 font-serif">
-		Aliquip nulla laboris eiusmod ad labore minim adipisicing. Nostrud officia qui
-		occaecat anim elit aliqua deserunt veniam sit nulla aliqua fugiat incididunt
-		aute. Reprehenderit occaecat enim sint nostrud occaecat voluptate nulla velit.
-		Laborum laborum sint minim ut tempor adipisicing tempor. In velit nulla
-		consequat esse in irure irure proident. Aliquip minim velit elit qui dolor
-		mollit amet cillum tempor cillum aliqua. Ad culpa cupidatat elit fugiat
-		excepteur.
-	</p>
+	<div class="col-span-6 border-t-[1px] border-gray-300 pt-4">
+		<p class="font-serif max-w-prose">
+			Aliquip nulla laboris eiusmod ad labore minim adipisicing. Nostrud officia
+			qui occaecat anim elit aliqua deserunt veniam sit nulla aliqua fugiat
+			incididunt aute. Reprehenderit occaecat enim sint nostrud occaecat voluptate
+			nulla velit. Laborum laborum sint minim ut tempor adipisicing tempor. In
+			velit nulla consequat esse in irure irure proident. Aliquip minim velit elit
+			qui dolor mollit amet cillum tempor cillum aliqua. Ad culpa cupidatat elit
+			fugiat excepteur.
+		</p>
+		<p class="mt-4 font-serif max-w-prose">
+			Deserunt Lorem consectetur irure excepteur officia velit ut proident aute
+			excepteur eiusmod cillum dolor. Dolore dolor aliqua laboris duis id ex sunt
+			velit minim reprehenderit officia nostrud. Sit enim duis magna est do.
+			Laborum nulla amet amet enim voluptate est voluptate ea cillum ea do aliquip
+			dolor.
+		</p>
+	</div>
 </Base>

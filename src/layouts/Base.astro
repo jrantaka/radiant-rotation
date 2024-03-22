@@ -13,7 +13,7 @@ const { pageTitle } = Astro.props;
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link
-			href="https://api.fontshare.com/v2/css?f[]=rowan@401,400,600,700&f[]=plein@300,700,500,400&display=swap"
+			href="https://api.fontshare.com/v2/css?f[]=rowan@401,400,600,700&f[]=switzer@300,700,500,600,400&display=swap"
 			rel="stylesheet"
 		/>
 		<meta name="viewport" content="width=device-width" />
@@ -23,8 +23,10 @@ const { pageTitle } = Astro.props;
 	</head>
 	<body transition:animate={fade({ duration: "0.2s" })}>
 		<Header />
-		<section class="max-w-prose mx-auto mt-24">
-			<h1 class="text-4xl font-bold mb-12">{pageTitle}</h1>
+		<section class="grid grid-cols-12 gap-8 mt-24">
+			<div class="col-span-4 col-start-2 border-t-[1px] border-gray-300 pt-4">
+				<h1 class="text-4xl font-semibold">{pageTitle}</h1>
+			</div>
 			<slot />
 		</section>
 	</body>
