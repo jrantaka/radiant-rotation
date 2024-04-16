@@ -16,16 +16,25 @@ const { pageTitle } = Astro.props;
 			href="https://api.fontshare.com/v2/css?f[]=rowan@401,400,600,700&f[]=switzer@300,700,500,600,400&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+			rel="stylesheet"
+		/>
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 		<ViewTransitions />
 	</head>
-	<body transition:animate={fade({ duration: "0.2s" })}>
+	<body transition:animate="none">
 		<Header />
-		<section class="grid grid-cols-12 gap-8 mt-24">
-			<div class="col-span-4 col-start-2 border-t-[1px] border-gray-300 pt-4">
-				<h1 class="text-4xl font-semibold">{pageTitle}</h1>
+		<section
+			class="grid grid-cols-4 mt-8 gap-4 md:grid-cols-12 md:gap-8 md:mt-24"
+			transition:animate={fade({ duration: "0.2s" })}
+		>
+			<div class="col-span-2 mx-4 md:col-span-3 md:col-start-3 md:mx-0">
+				<h1 class="text-3xl font-bold">{pageTitle}</h1>
 			</div>
 			<slot />
 		</section>

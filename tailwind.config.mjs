@@ -3,8 +3,8 @@ export default {
 	content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
 	theme: {
 		fontFamily: {
-			serif: ["Rowan", "ui-sans-serif", "system-ui", "-apple-system"],
-			sans: ["Switzer", "ui-sans-serif", "system-ui", "-apple-system"],
+			serif: ["IBM Plex Serif", "ui-sans-serif", "system-ui", "-apple-system"],
+			sans: ["IBM Plex Sans", "ui-sans-serif", "system-ui", "-apple-system"],
 		},
 		extend: {},
 	},

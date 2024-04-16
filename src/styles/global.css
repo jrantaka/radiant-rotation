@@ -1,14 +1,14 @@
 body {
-	@apply font-serif text-black dark:bg-black dark:text-white text-xl antialiased leading-relaxed;
+	@apply font-serif text-black dark:bg-slate-700 dark:text-white md:text-lg antialiased leading-normal;
 }
 h1 {
 	@apply font-sans;
 }
 .nav-links {
-	@apply flex flex-row items-baseline;
+	@apply md:flex md:flex-row md:items-baseline;
 }
 .nav-links a {
-	@apply mx-4 font-sans;
+	@apply border-transparent border-b-[1px] block md:mx-4 font-sans;
 }
 .nav-links a:first-of-type {
 	@apply ml-0;

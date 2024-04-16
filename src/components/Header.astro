@@ -3,9 +3,27 @@ import Navigation from "./Navigation.astro";
 ---
 
 <header class="">
-	<nav class="grid grid-cols-12 gap-8 mt-12">
-		<div class="col-span-4 col-start-2 text-xl font-bold font-sans">
-			Juho Rantakari
+	<nav
+		class="grid grid-cols-4 gap-4 mx-4 mt-4 md:mx-0 md:grid-cols-12 md:gap-8 md:mt-16"
+	>
+		<div
+			class="col-span-4 md:col-span-3 md:col-start-3 md:text-xl font-bold font-sans"
+		>
+			<svg
+				width="72"
+				height="36"
+				viewBox="0 0 72 36"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<circle cx="16" cy="18" r="15" stroke="white" stroke-width="2"></circle>
+				<circle cx="16" cy="18" r="9" stroke="white" stroke-width="2"></circle>
+				<circle cx="16" cy="18" r="3" stroke="white" stroke-width="2"></circle>
+				<path d="M54 0V36" stroke="white" stroke-width="2"></path>
+				<path d="M62 10L46 26" stroke="white" stroke-width="2"></path>
+				<path d="M62 26L46 10" stroke="white" stroke-width="2"></path>
+				<path d="M72 18L36 18" stroke="white" stroke-width="2"></path>
+			</svg>
 		</div>
 		<Navigation />
 	</nav>
