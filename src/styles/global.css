@@ -1,21 +1,19 @@
 body {
-	@apply font-serif text-black dark:bg-slate-700 dark:text-white md:text-lg antialiased leading-normal;
+	@apply font-sans text-lg text-black dark:bg-slate-700 dark:text-white leading-normal;
 }
 h1 {
-	@apply font-sans;
+	@apply font-headline;
 }
 .nav-links {
-	@apply md:flex md:flex-row md:items-baseline;
+	@apply flex flex-col;
 }
 .nav-links a {
-	@apply border-transparent border-b-[1px] block md:mx-4 font-sans;
+	@apply font-normal text-2xl md:text-xl text-stone-500;
 }
-.nav-links a:first-of-type {
-	@apply ml-0;
-}
+
 .nav-links .active {
-	@apply font-medium border-black border-b-[1px] dark:border-white;
+	@apply font-bold text-black;
 }
-.nav-links a:hover {
-	@apply border-gray-300 border-b-[1px];
+p {
+	@apply font-serif font-light;
 }

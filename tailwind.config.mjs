@@ -3,8 +3,9 @@ export default {
 	content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
 	theme: {
 		fontFamily: {
-			serif: ["IBM Plex Serif", "ui-sans-serif", "system-ui", "-apple-system"],
-			sans: ["IBM Plex Sans", "ui-sans-serif", "system-ui", "-apple-system"],
+			serif: ["Spectral", "ui-sans-serif", "system-ui", "-apple-system"],
+			sans: ["Inter", "ui-sans-serif", "system-ui", "-apple-system"],
+			headline: ["InterDisplay", "ui-sans-serif", "system-ui", "-apple-system"],
 		},
 		extend: {},
 	},
