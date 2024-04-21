@@ -1,5 +1,5 @@
 ---
-import Navigation from "./Navigation.astro";
+import NavLink from "./NavLink.astro";
 ---
 
 <header class="mt-24 md:mt-48">
@@ -11,6 +11,9 @@ import Navigation from "./Navigation.astro";
 		>
 			Hei, minä olen Juho
 		</div>
-		<Navigation />
+		<div class="nav-links mt-4 md:mt-0 col-span-4 md:col-span-2 md:col-start-8">
+			<NavLink href="/">Etusivu</NavLink>
+			<NavLink href="/blog">Blog</NavLink>
+		</div>
 	</nav>
 </header>

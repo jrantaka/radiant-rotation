@@ -14,25 +14,25 @@ const { pageTitle } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="preconnect" href="https://rsms.me/" />
 		<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-			rel="stylesheet"
-		/>
+
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 		<ViewTransitions />
 	</head>
-	<body transition:animate="none">
+	<body>
 		<Header />
 		<section
 			class="grid grid-cols-4 mt-48 gap-4 md:grid-cols-12 md:gap-8 md:mt-24"
 			transition:animate={fade({ duration: "0.2s" })}
 		>
 			<div class="col-span-4 mx-4 md:col-span-6 md:col-start-4 md:mx-0">
-				<h1 class="text-2xl font-medium font-headline mb-12">{pageTitle}</h1>
+				<h1
+					class="text-2xl font-medium font-headline mb-12"
+					transition:animate={fade({ duration: "0.4s" })}
+				>
+					{pageTitle}
+				</h1>
 				<slot />
 			</div>
 		</section>
