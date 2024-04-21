@@ -1,20 +1,18 @@
 ---
 import Base from "../layouts/Base.astro";
 import Greeting from "../components/Greeting";
+
+import { fade, slide } from "astro:transitions";
 ---
 
-<Base pageTitle="Tervetuloa kotisivuilleni">
-	<!-- <Greeting
-		client:load
-		messages={["Hejsan hejsan", "Hallo", "Hola", "Habari"]}
-	/> -->
-	<p>
-		Aliquip nulla laboris eiusmod ad labore minim adipisicing. Nostrud officia qui
-		occaecat anim elit aliqua deserunt veniam sit nulla aliqua fugiat incididunt
-		aute. Reprehenderit occaecat enim sint nostrud occaecat voluptate nulla velit.
-		Laborum laborum sint minim ut tempor adipisicing tempor. In velit nulla
-		consequat esse in irure irure proident. Aliquip minim velit elit qui dolor
-		mollit amet cillum tempor cillum aliqua. Ad culpa cupidatat elit fugiat
-		excepteur.
-	</p>
+<Base pageTitle="Tervetuloa kotisivuilleni!">
+	<!-- <Greeting client:load messages={["Hejsan", "Hallo", "Hola", "Habari"]} /> -->
+	<div transition:animate={fade({ duration: "0.35s" })}>
+		<p>
+			Aliquip nulla laboris eiusmod ad labore minim adipisicing. Nostrud officia
+			qui occaecat anim elit aliqua deserunt veniam sit nulla aliqua fugiat
+			incididunt aute. Reprehenderit occaecat enim sint nostrud occaecat voluptate
+			nulla velit. Laborum laborum sint minim ut tempor adipisicing tempor.
+		</p>
+	</div>
 </Base>

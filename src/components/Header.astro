@@ -2,18 +2,16 @@
 import NavLink from "./NavLink.astro";
 ---
 
-<header class="mt-24 md:mt-48">
-	<nav
-		class="grid items-baseline grid-cols-4 gap-4 mx-4 md:mx-0 md:grid-cols-12 md:gap-8"
+<header
+	class="mt-24 md:mt-32 grid items-baseline grid-cols-4 gap-0 mx-4 md:mx-0 md:grid-cols-12"
+>
+	<div
+		class="col-span-4 text-2xl md:col-span-3 md:col-start-4 md:text-2xl font-semibold font-headline"
 	>
-		<div
-			class="col-span-4 text-4xl md:col-span-3 md:col-start-4 md:text-4xl font-semibold font-headline"
-		>
-			Hei, minä olen Juho
-		</div>
-		<div class="nav-links mt-4 md:mt-0 col-span-4 md:col-span-2 md:col-start-8">
-			<NavLink href="/">Etusivu</NavLink>
-			<NavLink href="/blog">Blog</NavLink>
-		</div>
+		Juho Rantakari
+	</div>
+	<nav class="nav-links mt-4 md:mt-0 col-span-4 md:col-span-6 md:col-start-4">
+		<NavLink href="/">Etusivu</NavLink>
+		<NavLink href="/blog">Kirjoituksia</NavLink>
 	</nav>
 </header>
