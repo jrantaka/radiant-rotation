@@ -3,11 +3,10 @@ export default {
 	content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
 	theme: {
 		fontFamily: {
-			serif: ["Plantin MT Pro", "ui-sans-serif", "system-ui", "-apple-system"],
-			sans: ["Nitti Grotesk", "ui-sans-serif", "system-ui", "-apple-system"],
+			serif: ["linotype-sabon", "ui-sans-serif", "system-ui", "-apple-system"],
+			sans: ["Neue Haas Grotesk Text Pro", "system-ui", "-apple-system"],
 			headline: [
-				"Neue Haas Text Pro",
-				"InterDisplay",
+				"neue-haas-grotesk-text",
 				"ui-sans-serif",
 				"system-ui",
 				"-apple-system",
