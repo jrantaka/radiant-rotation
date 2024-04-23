@@ -10,8 +10,16 @@ import faceBadge from "../images/faceBadge.svg";
 >
 	<div
 		class="col-span-4 text-2xl md:col-span-3 md:col-start-4 md:text-2xl font-bold font-headline"
+		transition:persist
 	>
-		<Image src={faceBadge} alt="That's-a-me!'" class="w-24 mb-12" />
+		<a href="/">
+			<Image
+				src={faceBadge}
+				alt="That's-a-me!'"
+				class="w-24 mb-12 transform duration-150 cursor-pointer hover:scale-110 hover:rotate-6"
+				transition:persist
+			/></a
+		>
 		Juho Rantakari
 	</div>
 	<nav class="nav-links mt-4 md:mt-0 col-span-4 md:col-span-6 md:col-start-4">
